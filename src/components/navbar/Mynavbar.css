@@ -1,0 +1,43 @@
+.nav-header {
+	height: 75px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	z-index: 1000;
+	background-color: white;
+}
+.myMenu-big {
+	display: none;
+}
+.offcanvas-end {
+	width: 240px;
+	transition: 500ms;
+	transition-timing-function: ease-in-out;
+}
+.navbar-toggler {
+	color: white !important;
+	border-color: white !important;
+}
+
+.bottom-nav {
+	display: block;
+	width: auto !important;
+	position: sticky;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+@media screen and (min-width: 576px) {
+	.myMenu-big {
+		display: flex;
+	}
+	.nav-header {
+		position: sticky;
+		top: 0;
+		left: 0;
+	}
+	.bottom-nav {
+		display: none;
+	}
+}
