@@ -14,14 +14,14 @@ function App() {
 			// mode: colorMode,
 			Dark: {
 				bg: '#000000',
-				primary: '#ffffff',
-				secondary: ' #262424',
+				primary: ' #2a2828',
+				secondary: '#ffffff',
 				tertiary: '#756f66',
 			},
 			Coffee: {
 				bg: '#211720',
-				primary: '#746D63',
-				secondary: '#D6904B',
+				primary: '#dc944c',
+				secondary: '#746d63',
 				tertiary: '#746d63',
 			},
 			Cyberpunk: {
@@ -32,13 +32,14 @@ function App() {
 			},
 		},
 	});
-	const [colorMode, setColorMode] = useState('Cyberpunk');
+	const [colorMode, setColorMode] = useState('Coffee');
 
 	const colorThemes = {
 		bg: theme['palette'][colorMode].bg,
 		primary: theme['palette'][colorMode].primary,
 		secondary: theme['palette'][colorMode].secondary,
 		tertiary: theme['palette'][colorMode].tertiary,
+		colorMode: colorMode,
 		setColorMode: setColorMode,
 	};
 
