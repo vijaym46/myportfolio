@@ -1,0 +1,44 @@
+.about-wrapper {
+	min-height: 90vh;
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	flex-direction: column;
+}
+
+.about-content > p,
+.about-content > h4 {
+	line-height: 2rem;
+}
+
+.about-btns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.my-profile img {
+	width: 250px;
+	box-shadow: 0px 0px 15px 0px;
+	border-radius: 250px;
+}
+
+.myname {
+	font-family: 'Calligraffitti', cursive;
+	font-size: 38px;
+	line-height: 3.5rem;
+}
+
+@media screen and (min-width: 576px) {
+	.about-wrapper {
+		flex-direction: row;
+	}
+	.about-me,
+	.my-profile {
+		width: 50%;
+	}
+	.my-profile {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
