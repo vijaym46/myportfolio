@@ -17,11 +17,13 @@
 }
 
 .my-profile img {
-	width: 250px;
-	box-shadow: 0px 0px 15px 0px;
+	width: 200px;
+
 	border-radius: 250px;
 }
-
+.my-profile img:hover {
+	box-shadow: 0px 0px 6px 0px;
+}
 .myname {
 	font-family: 'Calligraffitti', cursive;
 	font-size: 38px;
@@ -40,5 +42,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+	}
+	.my-profile img {
+		width: 250px;
 	}
 }

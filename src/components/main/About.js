@@ -2,12 +2,13 @@ import { Button } from '@mui/material';
 import './About.css';
 import { useContext } from 'react';
 import { colorContext } from './../../App';
+import mine from './../../assets/mine.jpg';
 
 function About() {
 	const { secondary } = useContext(colorContext);
 	const textColor = { color: secondary };
 	return (
-		<div className="container about-wrapper">
+		<div className="container about-wrapper" id="about">
 			{/* This will hold about myself */}
 			<div className="about-me" style={textColor}>
 				<div className="about-content">
@@ -32,11 +33,7 @@ function About() {
 
 			{/* Profile picture */}
 			<div className="my-profile">
-				<img
-					src="https://brittanychiang.com/static/30a645f7db6038f83287d0c6042d3b2b/f9526/me.avif"
-					alt="broken"
-					aria-label="my picture"
-				/>
+				<img src={mine} alt="broken" aria-label="my picture" />
 			</div>
 		</div>
 	);
