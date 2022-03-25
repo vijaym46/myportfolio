@@ -1,0 +1,100 @@
+.projects-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	margin: 20px 0px;
+}
+.project-withsvg {
+	margin: -30px 0px 0px;
+}
+.project {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.project-content {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.project-img {
+	height: 200px;
+	position: relative;
+}
+.project-img > img {
+	width: 300px;
+	border-radius: 5px;
+}
+.project-link-btn {
+	display: flex;
+	justify-content: space-evenly;
+}
+.for-svg {
+	margin: 20px 0 0;
+}
+.mainLayer-Pokemon,
+.secondLayer-Pokemon {
+	width: 255px;
+	height: 350px;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+}
+.mainLayer-Pokemon {
+	position: absolute;
+	top: 0px;
+	left: -70px;
+	transform: scale(0.5, 0.5) rotate(348deg);
+	z-index: 2;
+}
+.secondLayer-Pokemon {
+	position: relative;
+	top: -50px;
+	bottom: 120px;
+	left: 70px;
+	transform: scale(0.5, 0.5) rotate(16deg);
+}
+@media screen and (min-width: 576px) {
+	.project {
+		flex-direction: row;
+		/* gap: 20px; */
+	}
+	.project > div {
+		width: 50%;
+	}
+	.project-img {
+		height: auto;
+	}
+	.project-img > img {
+		width: 350px;
+		border-radius: 5px;
+	}
+	.for-svg {
+		margin: -30px 0 0;
+	}
+	.mainLayer-Pokemon {
+		position: relative;
+		top: 120px;
+		left: 30px;
+		transform: scale(0.7, 0.7) rotate(348deg);
+	}
+	.secondLayer-Pokemon {
+		position: absolute;
+		top: -50px;
+		bottom: 100px;
+		left: 140px;
+		transform: scale(0.7, 0.7) rotate(6deg);
+	}
+}
+@media screen and (min-width: 992px) {
+	.mainLayer-Pokemon {
+		top: 175px;
+		left: 40px;
+		transform: rotate(348deg);
+	}
+	.secondLayer-Pokemon {
+		top: 0px;
+		bottom: 100px;
+		left: 210px;
+		transform: rotate(6deg);
+	}
+}
