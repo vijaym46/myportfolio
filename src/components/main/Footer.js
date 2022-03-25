@@ -57,7 +57,7 @@ function Footer() {
 	];
 
 	return (
-		<footer className="footer-wrapper">
+		<footer className="container-sm footer-wrapper">
 			<h3>Contact Me</h3>
 			<div className="footer-div">
 				<div className="contact-me">
