@@ -4,15 +4,12 @@ import { useFormik } from 'formik';
 import * as yup from 'yup';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-// import { useContext } from 'react';
-// import { colorContext } from './../../App';
 import { GrLinkedin, GrGithub, GrMail } from 'react-icons/gr';
 import ballons from './../../assets/ballons.svg';
 
-function Footer() {
-	// const { primary } = useContext(colorContext);
+toast.configure();
 
-	// For form validation using yup
+function Footer() {
 	const formValidationSchema = yup.object({
 		name: yup.string().required('Name is required to send message'),
 		email: yup
@@ -32,7 +29,6 @@ function Footer() {
 		},
 		validationSchema: formValidationSchema,
 		onSubmit: () => {
-			toast.success('We will reach you!!');
 			toast.success('email sent successfully');
 			resetForm();
 		},
