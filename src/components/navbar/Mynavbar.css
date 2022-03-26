@@ -6,17 +6,18 @@
 	z-index: 1000;
 	background-color: white;
 }
+
 .myMenu-big {
 	display: none;
 }
+
 .offcanvas-end {
 	width: 240px;
 	transition: 500ms;
 	transition-timing-function: ease-in-out;
 }
 .navbar-toggler {
-	color: white !important;
-	border-color: white !important;
+	background: white;
 }
 
 .bottom-nav {
@@ -26,6 +27,24 @@
 	bottom: 0;
 	left: 0;
 	z-index: 1000;
+}
+
+.bottomNav-text:hover {
+	border-bottom: 3px solid;
+	transition: border 500ms ease;
+}
+
+.pc-dropDown {
+	border: 1px solid;
+	border-radius: 20px;
+}
+
+.pc-dropDown > a {
+	color: rgb(170, 170, 170) !important;
+}
+
+.pc-dropDown-side > a {
+	color: rgb(170, 170, 170) !important;
 }
 
 @media screen and (min-width: 576px) {

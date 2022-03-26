@@ -5,14 +5,31 @@ import { useContext } from 'react';
 import { colorContext } from './../../App';
 
 function Mynavbar() {
-	const { bg, primary, setColorMode } = useContext(colorContext);
+	const { bg, primary, colorMode, setColorMode } = useContext(colorContext);
 	const bgStyle = { backgroundColor: bg };
-	const textColor = { color: primary };
+	const textColor = { color: primary, marginRight: '10px' };
+	const offCanvasStyle = { backgroundColor: primary };
+	const offCanvasText = { color: bg };
+
 	const themeList = ['Dark', 'Coffee', 'Cyberpunk'];
+	const hashLinkList = [
+		{
+			name: 'About',
+			link: '#about',
+		},
+		{
+			name: 'Projects',
+			link: '#projects',
+		},
+		{
+			name: 'Contact Me',
+			link: '#contact',
+		},
+	];
 
 	return (
 		<header className="nav-header" style={bgStyle}>
-			<Navbar className="mynav-wrapper" expand="sm" style={bgStyle}>
+			<Navbar className="container-sm mynav-wrapper" expand="sm" style={bgStyle}>
 				<Navbar.Brand style={textColor} href="#">
 					Portfolio
 				</Navbar.Brand>
@@ -23,29 +40,27 @@ function Mynavbar() {
 					id="offcanvasNavbar"
 					aria-labelledby="offcanvasNavbarLabel"
 					placement="end"
+					style={offCanvasStyle}
 				>
 					<Offcanvas.Header closeButton>
-						<Offcanvas.Title style={textColor} id="offcanvasNavbarLabel">
+						<Offcanvas.Title style={offCanvasText} id="offcanvasNavbarLabel">
 							Portfolio
 						</Offcanvas.Title>
 					</Offcanvas.Header>
 					<Offcanvas.Body>
 						<Nav className="justify-content-end flex-grow-1 pe-3">
-							<HashLink style={textColor} className="nav-link" to="#about">
-								About
+							<HashLink style={offCanvasText} className="nav-link" to="#about">
+								Home
 							</HashLink>
 
-							<HashLink style={textColor} className="nav-link" to="#projects">
-								Projects
-							</HashLink>
-
-							<HashLink style={textColor} className="nav-link" to="#contact">
-								Contact Me
-							</HashLink>
-							<NavDropdown title="Theme" id="navbarScrollingDropdown">
+							<NavDropdown
+								className="pc-dropDown-side"
+								title={`${colorMode}`}
+								id="navbarScrollingDropdown"
+							>
 								{themeList.map((e, index) => (
 									<NavDropdown.Item
-										style={textColor}
+										style={offCanvasText}
 										key={index}
 										onClick={() => setColorMode(`${e}`)}
 									>
@@ -59,20 +74,24 @@ function Mynavbar() {
 
 				{/* For displaying menu items in big screen */}
 				<Nav className="myMenu-big me-auto">
-					<HashLink style={textColor} className="nav-link" to="#about">
-						About
-					</HashLink>
+					{hashLinkList.map(({ name, link }, index) => (
+						<HashLink key={index} style={textColor} className="nav-link" to={link}>
+							{name}
+						</HashLink>
+					))}
 
-					<HashLink style={textColor} className="nav-link" to="#projects">
-						Projects
-					</HashLink>
-
-					<HashLink style={textColor} className="nav-link" to="#contact">
-						Contact Me
-					</HashLink>
-					<NavDropdown title="Theme" id="navbarScrollingDropdown">
+					<NavDropdown
+						className="pc-dropDown"
+						title={`${colorMode}`}
+						id="navbarScrollingDropdown"
+						style={textColor}
+					>
 						{themeList.map((e, index) => (
-							<NavDropdown.Item style={textColor} key={index} onClick={() => setColorMode(`${e}`)}>
+							<NavDropdown.Item
+								style={offCanvasText}
+								key={index}
+								onClick={() => setColorMode(`${e}`)}
+							>
 								{e}
 							</NavDropdown.Item>
 						))}
