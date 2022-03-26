@@ -29,29 +29,63 @@
 	display: flex;
 	justify-content: space-evenly;
 }
-.for-svg {
-	margin: 20px 0 0;
+.project-link-btn > button {
+	border-radius: 25px;
 }
-.mainLayer-Pokemon,
-.secondLayer-Pokemon {
+.project-link-btn > button > a {
+	text-decoration: none;
+}
+.for-svg {
+	margin: 30px 0 0;
+}
+.Layer-0Pokemon,
+.Layer-1Pokemon,
+.Layer-0Equipment,
+.Layer-1Equipment,
+.Layer-2Equipment {
 	width: 255px;
 	height: 350px;
 	background-repeat: no-repeat;
 	border-radius: 10px;
+	border: 2px solid yellow;
+	box-shadow: 0px 0px 1px;
 }
-.mainLayer-Pokemon {
+.Layer-0Pokemon {
 	position: absolute;
 	top: 0px;
 	left: -70px;
 	transform: scale(0.5, 0.5) rotate(348deg);
 	z-index: 2;
 }
-.secondLayer-Pokemon {
+.Layer-1Pokemon {
 	position: relative;
 	top: -50px;
 	bottom: 120px;
 	left: 70px;
 	transform: scale(0.5, 0.5) rotate(16deg);
+}
+.Layer-1Equipment {
+	position: absolute;
+	top: -30px;
+	left: -50px;
+	transform: scale(0.7, 0.7);
+	z-index: 4;
+}
+.Layer-0Equipment {
+	position: relative;
+	top: -90px;
+	bottom: 120px;
+	left: 50px;
+	transform: scale(0.5, 0.5);
+	z-index: 3;
+}
+.Layer-2Equipment {
+	position: absolute;
+	top: 30px;
+	bottom: 120px;
+	left: 80px;
+	transform: scale(0.5, 0.5) rotate(16deg);
+	z-index: 4;
 }
 @media screen and (min-width: 576px) {
 	.project {
@@ -71,30 +105,57 @@
 	.for-svg {
 		margin: -30px 0 0;
 	}
-	.mainLayer-Pokemon {
+	.Layer-0Pokemon {
 		position: relative;
 		top: 120px;
 		left: 30px;
 		transform: scale(0.7, 0.7) rotate(348deg);
 	}
-	.secondLayer-Pokemon {
+	.Layer-1Pokemon {
 		position: absolute;
 		top: -50px;
 		bottom: 100px;
 		left: 140px;
 		transform: scale(0.7, 0.7) rotate(6deg);
 	}
+	.Layer-1Equipment {
+		width: 350px;
+		top: -30px;
+		left: 20px;
+		transform: scale(1, 1);
+	}
+	.Layer-0Equipment {
+		top: -220px;
+		transform: scale(0.7, 0.7);
+		width: 350px;
+	}
+	.Layer-2Equipment {
+		top: 220px;
+		bottom: 120px;
+		transform: scale(0.7, 0.7) rotate(342deg);
+	}
 }
 @media screen and (min-width: 992px) {
-	.mainLayer-Pokemon {
+	.Layer-0Pokemon {
 		top: 175px;
 		left: 40px;
 		transform: rotate(348deg);
 	}
-	.secondLayer-Pokemon {
+	.Layer-1Pokemon {
 		top: 0px;
 		bottom: 100px;
 		left: 210px;
 		transform: rotate(6deg);
+	}
+	.Layer-0Equipment {
+		transform: scale(1, 1);
+		left: 180px;
+		width: 425;
+	}
+	.Layer-1Equipment {
+		width: 450px;
+	}
+	.Layer-2Equipment {
+		transform: scale(1, 1) rotate(342deg);
 	}
 }

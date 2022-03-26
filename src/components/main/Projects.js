@@ -4,8 +4,9 @@ import { useContext } from 'react';
 import { colorContext } from './../../App';
 import Gastly from './../../assets/pokecards/Gastly.png';
 import Pikachu from './../../assets/pokecards/Pikachu.png';
-import pokecardtry from './../../assets/pokecards/pokecardtry.png';
-import pokeCard from './../../assets/pokecards/pokeCard.png';
+import realLogin from './../../assets/equipment/realLogin.png';
+import realhome from './../../assets/equipment/realhome.png';
+import realCart from './../../assets/equipment/real-productCart.png';
 
 function Projects() {
 	const { bg, primary, secondary, tertiary } = useContext(colorContext);
@@ -17,9 +18,9 @@ function Projects() {
 				'To rent electrical equipments to vehicles. In this site one can rent things they need for specific ocassions.\n Customers are charged per hour for the product from the time they get to time they return.',
 			why: "Always had things that I used only once and getting dust in my space. So why isn't there any renting site for all the products. This is one that spraked me to create this site.",
 			whatnext: ['To make option available for people to rent out their unused items for rent.'],
-			// imgSrc: [pokeCard, pokecardtry],
-			img1: pokeCard,
-			img2: pokecardtry,
+			imgSrc: [realLogin, realhome, realCart],
+			// img1: pokeCard,
+			// img2: pokecardtry,
 			github: 'https://github.com/Arun3sh/equipmentrental',
 			live: 'https://real-arun.netlify.app/',
 			bg: tertiary,
@@ -35,8 +36,9 @@ function Projects() {
 				'Planning on adding their strength and weak against other pokemon',
 				'Best attacks to choose against opponent.',
 			],
-			img1: Gastly,
-			img2: Pikachu,
+			imgSrc: [Gastly, Pikachu],
+			// img1: Gastly,
+			// img2: Pikachu,
 			github: 'https://github.com/Arun3sh/Pokemon_Cards',
 			live: 'https://searchpokemoncard.netlify.app/',
 			bg: primary,
@@ -49,7 +51,7 @@ function Projects() {
 		<div className="projects-wrapper">
 			{/* With project list will traverse and create projects */}
 			{projectList.map(
-				({ name, about, why, whatnext, img1, img2, github, live, bg, text, heading }, index) => (
+				({ name, about, why, whatnext, imgSrc, github, live, bg, text, heading }, index) => (
 					<div className="project-withsvg" key={index} style={{ backgroundColor: bg }}>
 						<div className="container-sm project">
 							{/* Project is divided into 2 parts here all the wordings will come */}
@@ -80,7 +82,7 @@ function Projects() {
 
 								{/* Button for source code and live link */}
 								<div className="project-link-btn">
-									<Button variant="outlined">
+									<Button variant="contained" size="large">
 										<a target="_blank" rel="noreferrer" href={live}>
 											Live
 										</a>
@@ -95,15 +97,13 @@ function Projects() {
 
 							{/* Project images will be displayed here */}
 							<div className="project-img">
-								<div
-									className={'mainLayer-' + name}
-									style={{ backgroundImage: `url(${img1})` }}
-								></div>
-								<div
-									className={'secondLayer-' + name}
-									style={{ backgroundImage: `url(${img2})` }}
-								></div>
-								{/* <div className="try"></div> */}
+								{imgSrc.map((e, index) => (
+									<div
+										key={index}
+										className={'Layer-' + index + name}
+										style={{ backgroundImage: `url(${e})` }}
+									></div>
+								))}
 							</div>
 						</div>
 
