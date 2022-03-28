@@ -1,0 +1,39 @@
+.myskills-wrapper {
+	margin: 30px 0px;
+}
+.myskills-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 50px;
+}
+.myskills {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.myskills-illustration > img {
+	width: 100%;
+}
+.skill-icons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 25px;
+}
+.skill-icons > svg {
+	width: 50px;
+	height: 50px;
+}
+
+@media screen and (min-width: 992px) {
+	.myskills-container {
+		flex-direction: row;
+	}
+	.myskills {
+		width: 50%;
+	}
+
+	.myskills-illustration {
+		width: 50%;
+	}
+}
