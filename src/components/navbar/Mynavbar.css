@@ -40,11 +40,11 @@
 }
 
 .pc-dropDown > a {
-	color: rgb(170, 170, 170) !important;
+	color: rgb(0, 0, 0) !important;
 }
 
 .pc-dropDown-side > a {
-	color: rgb(170, 170, 170) !important;
+	color: rgb(0, 0, 0) !important;
 }
 
 @media screen and (min-width: 576px) {
