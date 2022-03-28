@@ -17,10 +17,8 @@ function Projects() {
 			about:
 				'To rent electrical equipments to vehicles. In this site one can rent things they need for specific ocassions.\n Customers are charged per hour for the product from the time they get to time they return.',
 			why: "Always had things that I used only once and getting dust in my space. So why isn't there any renting site for all the products. This is one that spraked me to create this site.",
-			whatnext: ['To make option available for people to rent out their unused items for rent.'],
+			whatnext: ['To make option available for people to rent out their unused items.'],
 			imgSrc: [realLogin, realhome, realCart],
-			// img1: pokeCard,
-			// img2: pokecardtry,
 			github: 'https://github.com/Arun3sh/equipmentrental',
 			live: 'https://real-arun.netlify.app/',
 			bg: tertiary,
@@ -37,8 +35,6 @@ function Projects() {
 				'Best attacks to choose against opponent.',
 			],
 			imgSrc: [Gastly, Pikachu],
-			// img1: Gastly,
-			// img2: Pikachu,
 			github: 'https://github.com/Arun3sh/Pokemon_Cards',
 			live: 'https://searchpokemoncard.netlify.app/',
 			bg: primary,
@@ -71,7 +67,7 @@ function Projects() {
 
 								{/* Future upgrades */}
 								<div className="project-future">
-									<h5>Future Uprdaes</h5>
+									<h5>Future Upgrades</h5>
 
 									<ul className="project-info" style={{ color: text }}>
 										{whatnext.map((e, index) => (
@@ -82,7 +78,7 @@ function Projects() {
 
 								{/* Button for source code and live link */}
 								<div className="project-link-btn">
-									<Button variant="contained" size="large">
+									<Button variant="outlined" size="large">
 										<a target="_blank" rel="noreferrer" href={live}>
 											Live
 										</a>
