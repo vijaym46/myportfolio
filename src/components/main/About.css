@@ -16,6 +16,9 @@
 	justify-content: space-between;
 }
 
+.about-btns a {
+	text-decoration: none;
+}
 .my-profile img {
 	width: 200px;
 	filter: grayscale(100%) sepia(100%);
@@ -23,8 +26,7 @@
 }
 .my-profile img:hover {
 	filter: unset;
-	transform: scale(1.15);
-	transition: 300ms ease-in-out;
+	transform: scale(1.05);
 }
 .myname {
 	font-family: 'Calligraffitti', cursive;

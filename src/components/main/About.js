@@ -3,9 +3,10 @@ import './About.css';
 import { useContext } from 'react';
 import { colorContext } from './../../App';
 import mine from './../../assets/mine.jpg';
+import { Link } from 'react-router-dom';
 
 function About() {
-	const { secondary, tertiary } = useContext(colorContext);
+	const { secondary } = useContext(colorContext);
 	const textColor = { color: secondary };
 	return (
 		<div className="about-for-svg " id="about">
@@ -16,15 +17,27 @@ function About() {
 						<h3 className="myname">I'm Aruneshwaran</h3>
 						<h4>A Full Stack Developer</h4>
 						<p>
-							I am a Software Engineer trying get better every day. I've choosen to be a developer
-							by interest.
+							&emsp; &emsp; Software Engineer dedicated to improving skills through hands-on
+							learning and development work. <br />
+							&emsp; &emsp; Proficient in mobile and desktop development environments. Adept at
+							using HTML5, JavaScript and other programming languages to produce clean code. <br />
+							&emsp; &emsp; Well-organized and collaborative with strong communication and
+							analytical abilities.
 						</p>
 					</div>
 
 					{/* Buttons to resume an contact me */}
 					<div className="about-btns">
 						<Button className="resume-btn" variant="outlined" color="primary">
-							Resume
+							<Link
+								to={{
+									pathname:
+										'https://drive.google.com/drive/folders/1yybiwq3T6wL1QbGE9S_Koz91i8roNWyM?usp=sharing',
+								}}
+								target="_blank"
+							>
+								Resume
+							</Link>
 						</Button>
 						<Button variant="contained" color="primary" href="#contact">
 							Hire me
@@ -37,13 +50,6 @@ function About() {
 					<img src={mine} alt="broken" aria-label="my picture" />
 				</div>
 			</div>
-			<svg id="projects" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-				<path
-					fill={tertiary}
-					fillOpacity="1"
-					d="M0,256L120,234.7C240,213,480,171,720,165.3C960,160,1200,192,1320,208L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
-				></path>
-			</svg>
 		</div>
 	);
 }
