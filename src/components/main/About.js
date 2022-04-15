@@ -20,9 +20,11 @@ function About() {
 							&emsp; &emsp; Software Engineer dedicated to improving skills through hands-on
 							learning and development work. <br />
 							&emsp; &emsp; Proficient in mobile and desktop development environments. Adept at
-							using HTML5, JavaScript and other programming languages to produce clean code. <br />
-							&emsp; &emsp; Well-organized and collaborative with strong communication and
-							analytical abilities.
+							using HTML5, JavaScript and other programming languages to produce clean code.
+							Well-organized and collaborative with strong communication and analytical abilities.{' '}
+							<br />
+							&emsp; &emsp; Having worked in a Customer Support role, I'm capable to understanding
+							Customer needs and working along to acheive desired result.
 						</p>
 					</div>
 
@@ -32,7 +34,7 @@ function About() {
 							<Link
 								to={{
 									pathname:
-										'https://drive.google.com/drive/folders/1yybiwq3T6wL1QbGE9S_Koz91i8roNWyM?usp=sharing',
+										'https://drive.google.com/u/0/uc?id=1UDsSwDAyjjdfyQni8G5zimYXV3mRS9ZV&export=download',
 								}}
 								target="_blank"
 							>

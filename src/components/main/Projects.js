@@ -7,6 +7,12 @@ import Pikachu from './../../assets/pokecards/Pikachu.png';
 import realLogin from './../../assets/equipment/realLogin.png';
 import realhome from './../../assets/equipment/realhome.png';
 import realCart from './../../assets/equipment/real-productCart.png';
+import ptLogin from './../../assets/healthcare/ptLogin.png';
+import bookAppointment from './../../assets/healthcare/bookAppointment.png';
+import home from './../../assets/healthcare/home.png';
+import addMovie from './../../assets/favmovie/addMovie.png';
+import movieHome from './../../assets/favmovie/movieHome.png';
+import updateMovie from './../../assets/favmovie/updateMovie.png';
 
 function Projects() {
 	const { bg, primary, secondary, tertiary } = useContext(colorContext);
@@ -21,6 +27,32 @@ function Projects() {
 			imgSrc: [realLogin, realhome, realCart],
 			github: 'https://github.com/Arun3sh/equipmentrental',
 			live: 'https://real-arun.netlify.app/',
+			bg: tertiary,
+			text: secondary,
+			heading: primary,
+		},
+		{
+			name: 'Healthcare - Book Appointments',
+			about:
+				'Healthcare is to have the treatment records in cloud and accessible at any time. It is also a place where you can book appointment with doctors at the time you need. ',
+			why: 'It was a way to reduce the waiting time in hospitals',
+			whatnext: ['To make reschdeule available.'],
+			imgSrc: [ptLogin, home, bookAppointment],
+			github: 'https://github.com/Arun3sh/doctorappointment',
+			live: 'https://healthcare-arun.netlify.app/',
+			bg: primary,
+			text: secondary,
+			heading: tertiary,
+		},
+		{
+			name: 'My Favourite Movie - To have your own movie list',
+			about:
+				'Here one can save their favourite movies and share with friends. Able to ask friends to give movie suggestions. ',
+			why: 'To have a movie list to give suggestions to friends and they can have some insight here',
+			whatnext: ['To make reschdeule available.'],
+			imgSrc: [movieHome],
+			github: 'https://github.com/Arun3sh/my-fav-movie-react',
+			live: 'https://myfavmovie-fullstack.netlify.app/',
 			bg: tertiary,
 			text: secondary,
 			heading: primary,
@@ -94,11 +126,12 @@ function Projects() {
 							{/* Project images will be displayed here */}
 							<div className="project-img">
 								{imgSrc.map((e, index) => (
-									<div
-										key={index}
-										className={'Layer-' + index + name}
-										style={{ backgroundImage: `url(${e})` }}
-									></div>
+									// <div
+									// 	key={index}
+									// 	className={'Layer-' + index + name}
+									// 	style={{ backgroundImage: `url(${e})` }}
+									// ></div>
+									<img className={'Layer-' + index + name} src={e} key={index} />
 								))}
 							</div>
 						</div>
