@@ -50,6 +50,31 @@
 	border: 2px solid yellow;
 	box-shadow: 0px 0px 1px;
 }
+.Layer-0Healthcare,
+.Layer-2Healthcare {
+	transform: scale(0.5, 0.5);
+	border-radius: 10px;
+	border: 2px solid transparent;
+	box-shadow: 0px 0px 1px;
+}
+.Layer-0Healthcare {
+	position: absolute;
+	top: -75px;
+	left: 68px;
+}
+.Layer-1Healthcare {
+	position: relative;
+	top: 30px;
+	transform: scale(0.75, 0.75);
+	border-radius: 10px;
+	border: 2px solid transparent;
+	box-shadow: 0px 0px 1px;
+}
+.Layer-2Healthcare {
+	position: relative;
+	top: -80px;
+	left: -80px;
+}
 .Layer-0Pokemon {
 	position: absolute;
 	top: 0px;
@@ -84,9 +109,10 @@
 	top: 30px;
 	bottom: 120px;
 	left: 80px;
-	transform: scale(0.5, 0.5) rotate(16deg);
+	transform: scale(0.5, 0.5) rotate(2deg);
 	z-index: 4;
 }
+
 @media screen and (min-width: 576px) {
 	.project {
 		flex-direction: row;
@@ -105,17 +131,21 @@
 	.for-svg {
 		margin: -30px 0 0;
 	}
+	.Layer-0Pokemon,
+	.Layer-1Pokemon {
+		width: 300px !important;
+	}
 	.Layer-0Pokemon {
 		position: relative;
 		top: 120px;
-		left: 30px;
+		left: 20px;
 		transform: scale(0.7, 0.7) rotate(348deg);
 	}
 	.Layer-1Pokemon {
 		position: absolute;
 		top: -50px;
 		bottom: 100px;
-		left: 140px;
+		left: 115px;
 		transform: scale(0.7, 0.7) rotate(6deg);
 	}
 	.Layer-1Equipment {
@@ -132,16 +162,29 @@
 	.Layer-2Equipment {
 		top: 220px;
 		bottom: 120px;
-		transform: scale(0.7, 0.7) rotate(342deg);
+		transform: scale(0.7, 0.7);
+	}
+	.Layer-0Healthcare,
+	.Layer-2Healthcare {
+		transform: scale(0.75, 0.75);
+	}
+	.Layer-1Healthcare {
+		top: -20px;
+		transform: scale(1, 1);
+	}
+	.Layer-2Healthcare {
+		top: 80px;
 	}
 }
 @media screen and (min-width: 992px) {
 	.Layer-0Pokemon {
+		width: 250px !important;
 		top: 175px;
 		left: 40px;
 		transform: rotate(348deg);
 	}
 	.Layer-1Pokemon {
+		width: 250px !important;
 		top: 0px;
 		bottom: 100px;
 		left: 210px;
@@ -157,5 +200,10 @@
 	}
 	.Layer-2Equipment {
 		transform: scale(1, 1) rotate(342deg);
+	}
+	.Layer-0My {
+		position: relative;
+		top: 30px;
+		left: 50px;
 	}
 }
