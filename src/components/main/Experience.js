@@ -4,7 +4,7 @@ import './../main/Experience.css';
 import { colorContext } from './../../App';
 
 function Experience() {
-	const { primary } = useContext(colorContext);
+	const { primary, secondary } = useContext(colorContext);
 	const companies = ['HCL', 'Amazon', 'Shakthi Tech'];
 	const [compIndex, setCompIndex] = useState(0);
 	const experienceList = [
@@ -44,7 +44,6 @@ function Experience() {
 	];
 	const [activeTab, setActiveTab] = useState(0);
 	const handleChange = (index) => {
-		console.log(index);
 		setActiveTab(index);
 	};
 	return (
@@ -64,7 +63,7 @@ function Experience() {
 							</Button>
 						))}
 					</div>
-					<GetWorkInfo experienceList={experienceList[compIndex]} />
+					<GetWorkInfo experienceList={experienceList[compIndex]} secondary={secondary} />
 				</div>
 			</div>
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -78,18 +77,21 @@ function Experience() {
 	);
 }
 
-function GetWorkInfo({ experienceList }) {
+function GetWorkInfo({ experienceList, secondary }) {
 	return (
 		<div className="about-job">
-			<h3 className="job-role">
+			<h3 className="job-role" style={{ color: secondary }}>
 				{experienceList.role}
-				<span className="at-company"> @ {experienceList.company}</span>
+				<span className="at-company" style={{ color: secondary }}>
+					{' '}
+					@ {experienceList.company}
+				</span>
 			</h3>
-			<p>{experienceList.timeline}</p>
+			<p style={{ color: secondary }}>{experienceList.timeline}</p>
 
 			<ul className="resp-ul">
 				{experienceList.resp.map((e, index) => (
-					<li key={index} className="resp-li">
+					<li key={index} style={{ color: secondary }} className="resp-li">
 						{e}
 					</li>
 				))}

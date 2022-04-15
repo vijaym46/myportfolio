@@ -13,7 +13,7 @@ import Myskills from './components/main/Myskills';
 export const colorContext = createContext(null);
 
 function App() {
-	const [colorMode, setColorMode] = useState('Dream');
+	const [colorMode, setColorMode] = useState('Cyberpunk');
 
 	const theme = createTheme({
 		palette: {

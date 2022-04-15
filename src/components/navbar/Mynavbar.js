@@ -5,7 +5,7 @@ import { useContext } from 'react';
 import { colorContext } from './../../App';
 
 function Mynavbar() {
-	const { bg, primary, colorMode, setColorMode } = useContext(colorContext);
+	const { bg, primary, setColorMode } = useContext(colorContext);
 	const bgStyle = { backgroundColor: bg };
 	const textColor = { color: primary, marginRight: '10px' };
 	const offCanvasStyle = { backgroundColor: primary };
@@ -55,14 +55,14 @@ function Mynavbar() {
 
 							<NavDropdown
 								className="pc-dropDown-side"
-								title={`${colorMode}`}
+								title={'Theme'}
 								id="navbarScrollingDropdown"
 							>
 								{themeList.map((e, index) => (
 									<NavDropdown.Item
 										style={offCanvasText}
 										key={index}
-										onClick={() => setColorMode(`${e}`)}
+										onClick={() => setColorMode(e)}
 									>
 										{e}
 									</NavDropdown.Item>
@@ -82,16 +82,12 @@ function Mynavbar() {
 
 					<NavDropdown
 						className="pc-dropDown"
-						title={`${colorMode}`}
+						title={'Theme'}
 						id="navbarScrollingDropdown"
 						style={textColor}
 					>
 						{themeList.map((e, index) => (
-							<NavDropdown.Item
-								style={offCanvasText}
-								key={index}
-								onClick={() => setColorMode(`${e}`)}
-							>
+							<NavDropdown.Item style={offCanvasText} key={index} onClick={() => setColorMode(e)}>
 								{e}
 							</NavDropdown.Item>
 						))}
