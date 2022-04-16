@@ -13,7 +13,7 @@ import Myskills from './components/main/Myskills';
 export const colorContext = createContext(null);
 
 function App() {
-	const [colorMode, setColorMode] = useState('Cyberpunk');
+	const [colorMode, setColorMode] = useState('Try');
 
 	const theme = createTheme({
 		palette: {
@@ -47,6 +47,18 @@ function App() {
 				primary: '#f77f00',
 				secondary: '#d62828',
 				tertiary: '#003049',
+			},
+			Light: {
+				bg: '#ffffff',
+				primary: '#4594D9',
+				secondary: '#09090b',
+				tertiary: '#dca54c',
+			},
+			Try: {
+				bg: '#DFDDC7',
+				primary: '#F58B54',
+				secondary: '#A34A28',
+				tertiary: '#211717',
 			},
 		},
 	});

@@ -8,10 +8,10 @@ function Mynavbar() {
 	const { bg, primary, setColorMode } = useContext(colorContext);
 	const bgStyle = { backgroundColor: bg };
 	const textColor = { color: primary, marginRight: '10px' };
-	const offCanvasStyle = { backgroundColor: primary };
-	const offCanvasText = { color: bg };
+	const offCanvasStyle = { backgroundColor: bg };
+	const offCanvasText = { color: primary };
 
-	const themeList = ['Coffee', 'Cyberpunk', 'Dark', 'Dream'];
+	const themeList = ['Coffee', 'Cyberpunk', 'Dark', 'Dream', 'Light'];
 	const hashLinkList = [
 		{
 			name: 'About',
