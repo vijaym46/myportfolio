@@ -11,7 +11,7 @@ function Mynavbar() {
 	const offCanvasStyle = { backgroundColor: bg };
 	const offCanvasText = { color: primary };
 
-	const themeList = ['Coffee', 'Cyberpunk', 'Dark', 'Dream', 'Light'];
+	const themeList = ['Coffee', 'Dark', 'Dream', 'Light'];
 	const hashLinkList = [
 		{
 			name: 'About',

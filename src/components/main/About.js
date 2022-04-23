@@ -3,7 +3,7 @@ import './About.css';
 import { useContext } from 'react';
 import { colorContext } from './../../App';
 import mine from './../../assets/mine.jpg';
-import { Link } from 'react-router-dom';
+import resume from './../../assets/AruneshwaranM.pdf';
 
 function About() {
 	const { secondary } = useContext(colorContext);
@@ -31,15 +31,9 @@ function About() {
 					{/* Buttons to resume an contact me */}
 					<div className="about-btns">
 						<Button className="resume-btn" variant="outlined" color="primary">
-							<Link
-								to={{
-									pathname:
-										'https://drive.google.com/u/0/uc?id=1UDsSwDAyjjdfyQni8G5zimYXV3mRS9ZV&export=download',
-								}}
-								target="_blank"
-							>
+							<a href={resume} target="_blank" rel="noreferrer">
 								Resume
-							</Link>
+							</a>
 						</Button>
 						<Button variant="contained" color="primary" href="#contact">
 							Hire me
