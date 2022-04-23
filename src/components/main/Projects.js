@@ -43,6 +43,7 @@ function Projects() {
 				herokuicon,
 				netlifyicon,
 			],
+			credentials: [{ email: 'admin@real.com', password: 'Admin@123' }],
 			github: 'https://github.com/Arun3sh/equipmentrental',
 			live: 'https://real-arun.netlify.app/',
 			bg: tertiary,
@@ -66,6 +67,10 @@ function Projects() {
 				herokuicon,
 				netlifyicon,
 			],
+			credentials: [
+				{ email: 'peter@doc.com', password: 'Doc@123' },
+				{ email: 'admin@real.com', password: 'Admin@123' },
+			],
 			github: 'https://github.com/Arun3sh/doctorappointment',
 			live: 'https://healthcare-arun.netlify.app/',
 			bg: primary,
@@ -88,6 +93,7 @@ function Projects() {
 				herokuicon,
 				netlifyicon,
 			],
+			credentials: [],
 			github: 'https://github.com/Arun3sh/my-fav-movie-react',
 			live: 'https://myfavmovie-fullstack.netlify.app/',
 			bg: tertiary,
@@ -105,6 +111,7 @@ function Projects() {
 			],
 			imgSrc: [Gastly, Pikachu],
 			techStack: [javascripticon, bootstrapicon, netlifyicon],
+			credentials: [],
 			github: 'https://github.com/Arun3sh/Pokemon_Cards',
 			live: 'https://searchpokemoncard.netlify.app/',
 			bg: primary,
@@ -118,7 +125,20 @@ function Projects() {
 			{/* With project list will traverse and create projects */}
 			{projectList.map(
 				(
-					{ name, about, why, whatnext, imgSrc, techStack, github, live, bg, text, heading },
+					{
+						name,
+						about,
+						why,
+						whatnext,
+						imgSrc,
+						techStack,
+						credentials,
+						github,
+						live,
+						bg,
+						text,
+						heading,
+					},
 					index
 				) => (
 					<div className="project-withsvg" key={index} style={{ backgroundColor: bg }}>
@@ -153,6 +173,16 @@ function Projects() {
 								<div className="project-techStack">
 									{techStack.map((e, index) => (
 										<img key={index} src={e} alt="broken" />
+									))}
+								</div>
+
+								{/* For displaying credentials for the site */}
+								<div className="project-credentials">
+									{credentials.length > 0 ? <h4>Credentails for the live site</h4> : ''}
+									{credentials.map(({ email, password }, index) => (
+										<p>
+											{password === 'Admin@123' ? 'Admin' : 'Doctor'} : {email} - {password}
+										</p>
 									))}
 								</div>
 

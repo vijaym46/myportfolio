@@ -50,7 +50,8 @@ function App() {
 			},
 			Light: {
 				bg: '#ffffff',
-				primary: '#4594D9',
+				// primary: '#4594D9',
+				primary: '#28547B',
 				secondary: '#09090b',
 				tertiary: '#dca54c',
 			},
