@@ -17,6 +17,20 @@
 	flex-direction: column;
 	gap: 20px;
 }
+.project-title,
+.project-future > h5 {
+	font-family: 'Calligraffitti', cursive;
+}
+.project-techStack {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	gap: 30px;
+	width: 100%;
+}
+.project-techStack > img {
+	width: 50px;
+}
 .project-img {
 	height: 200px;
 	position: relative;
@@ -121,9 +135,13 @@
 	.project > div {
 		width: 50%;
 	}
+	.project-techStack {
+		width: 80%;
+	}
 	.project-img {
 		height: auto;
 	}
+
 	.project-img > img {
 		width: 350px;
 		border-radius: 5px;
