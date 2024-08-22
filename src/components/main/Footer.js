@@ -45,17 +45,17 @@ function Footer() {
 	const mediaList = [
 		{
 			name: 'Github',
-			link: 'https://github.com/Arun3sh/',
+			link: 'https://github.com/vijaym46',
 			other: <GrGithub />,
 		},
 		{
 			name: 'Linkedin',
-			link: 'https://www.linkedin.com/in/aruneshwaran-m/',
+			link: 'https://www.linkedin.com/in/vijaym4/',
 			other: <GrLinkedin />,
 		},
 		{
-			name: 'm.aruneshwar@gmail.com',
-			link: 'mailto:m.aruneshwar@gmail.com',
+			name: 'vijaym4600@gmail.com',
+			link: 'mailto:vijaym4600@gmail.com',
 			other: <GrMail />,
 		},
 	];
@@ -63,7 +63,7 @@ function Footer() {
 	// To send email
 	const form = useRef();
 	const sendMail = () => {
-		emailjs.sendForm('service_g063qck', 'template_anzvuo1', form.current, 'Lm2I4CziF907rc1v9').then(
+		emailjs.sendForm('service_qa721ei', 'template_3wbrldm', form.current, '1WUHLaQU1rupdcWyH').then(
 			(result) => {
 				toast.success('email sent successfully');
 			},
@@ -155,7 +155,6 @@ function Footer() {
 					</form>
 				</div>
 			</div>
-			Copyright © 2022 Aruneshwaran
 		</footer>
 	);
 }

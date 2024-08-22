@@ -14,17 +14,15 @@ function About() {
 				{/* This will hold about myself */}
 				<div className="about-me" style={textColor}>
 					<div className="about-content">
-						<h3 className="myname">I'm Aruneshwaran</h3>
-						<h4>A Full Stack Developer</h4>
+						<h3 className="myname">I'm Vijay</h3>
+						<h4>A Frontend Developer</h4>
 						<p>
-							&emsp; &emsp; Software Engineer dedicated to improving skills through hands-on
+							&emsp; &emsp; Software Developer dedicated to improving skills through hands-on
 							learning and development work. <br />
 							&emsp; &emsp; Proficient in mobile and desktop development environments. Adept at
 							using HTML5, JavaScript and other programming languages to produce clean code.
 							Well-organized and collaborative with strong communication and analytical abilities.{' '}
 							<br />
-							&emsp; &emsp; Having worked in a Customer Support role, I'm capable to understanding
-							Customer needs and working along to acheive desired result.
 						</p>
 					</div>
 

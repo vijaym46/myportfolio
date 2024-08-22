@@ -6,7 +6,6 @@ import { createContext, useState } from 'react';
 import { createTheme, Paper, ThemeProvider } from '@mui/material';
 import About from './components/main/About';
 import Projects from './components/main/Projects';
-import Experience from './components/main/Experience';
 import Footer from './components/main/Footer';
 import Myskills from './components/main/Myskills';
 
@@ -82,7 +81,6 @@ function App() {
 						<About />
 						<Myskills />
 						<Projects />
-						<Experience />
 						<Footer />
 						<Bottomnav />
 					</div>

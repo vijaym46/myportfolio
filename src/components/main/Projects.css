@@ -2,7 +2,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 25px;
-	margin: 20px 0px;
+	margin: 0px 0px;
 }
 .project-withsvg {
 	margin: -30px 0px 0px;
@@ -52,11 +52,9 @@
 .for-svg {
 	margin: 30px 0 0;
 }
-.Layer-0Pokemon,
-.Layer-1Pokemon,
-.Layer-0Equipment,
-.Layer-1Equipment,
-.Layer-2Equipment {
+.Layer-0Netflix,
+.Layer-1Netflix,
+.Layer-2Netflix {
 	width: 255px;
 	height: 350px;
 	background-repeat: no-repeat;
@@ -64,19 +62,19 @@
 	border: 2px solid yellow;
 	box-shadow: 0px 0px 1px;
 }
-.Layer-0Healthcare,
-.Layer-2Healthcare {
+.Layer-0Todo-List,
+.Layer-2Todo-List {
 	transform: scale(0.5, 0.5);
 	border-radius: 10px;
 	border: 2px solid transparent;
 	box-shadow: 0px 0px 1px;
 }
-.Layer-0Healthcare {
+.Layer-0Todo-List {
 	position: absolute;
 	top: -75px;
 	left: 68px;
 }
-.Layer-1Healthcare {
+.Layer-1Todo-List {
 	position: relative;
 	top: 30px;
 	transform: scale(0.75, 0.75);
@@ -84,33 +82,20 @@
 	border: 2px solid transparent;
 	box-shadow: 0px 0px 1px;
 }
-.Layer-2Healthcare {
+.Layer-2Todo-List {
 	position: relative;
 	top: -80px;
 	left: -80px;
 }
-.Layer-0Pokemon {
-	position: absolute;
-	top: 0px;
-	left: -70px;
-	transform: scale(0.5, 0.5) rotate(348deg);
-	z-index: 2;
-}
-.Layer-1Pokemon {
-	position: relative;
-	top: -50px;
-	bottom: 120px;
-	left: 70px;
-	transform: scale(0.5, 0.5) rotate(16deg);
-}
-.Layer-1Equipment {
+
+.Layer-1Netflix {
 	position: absolute;
 	top: -30px;
 	left: -50px;
 	transform: scale(0.7, 0.7);
 	z-index: 4;
 }
-.Layer-0Equipment {
+.Layer-0Netflix {
 	position: relative;
 	top: -90px;
 	bottom: 120px;
@@ -118,7 +103,7 @@
 	transform: scale(0.5, 0.5);
 	z-index: 3;
 }
-.Layer-2Equipment {
+.Layer-2Netflix {
 	position: absolute;
 	top: 30px;
 	bottom: 120px;
@@ -166,31 +151,31 @@
 		left: 115px;
 		transform: scale(0.7, 0.7) rotate(6deg);
 	}
-	.Layer-1Equipment {
+	.Layer-1Netflix {
 		width: 350px;
 		top: -30px;
 		left: 20px;
 		transform: scale(1, 1);
 	}
-	.Layer-0Equipment {
+	.Layer-0Netflix {
 		top: -220px;
 		transform: scale(0.7, 0.7);
 		width: 350px;
 	}
-	.Layer-2Equipment {
+	.Layer-2Netflix {
 		top: 220px;
 		bottom: 120px;
 		transform: scale(0.7, 0.7);
 	}
-	.Layer-0Healthcare,
-	.Layer-2Healthcare {
+	.Layer-0Todo-List,
+	.Layer-2Todo-List {
 		transform: scale(0.75, 0.75);
 	}
-	.Layer-1Healthcare {
+	.Layer-1Todo-List {
 		top: -20px;
 		transform: scale(1, 1);
 	}
-	.Layer-2Healthcare {
+	.Layer-2Todo-List {
 		top: 80px;
 	}
 }
@@ -208,15 +193,15 @@
 		left: 210px;
 		transform: rotate(6deg);
 	}
-	.Layer-0Equipment {
+	.Layer-0Netflix {
 		transform: scale(1, 1);
 		left: 180px;
 		width: 425;
 	}
-	.Layer-1Equipment {
+	.Layer-1Netflix {
 		width: 450px;
 	}
-	.Layer-2Equipment {
+	.Layer-2Netflix {
 		transform: scale(1, 1) rotate(342deg);
 	}
 	.Layer-0My {

@@ -2,12 +2,8 @@ import {
 	SiJavascript,
 	SiHtml5,
 	SiCss3,
-	SiMaterialui,
 	SiBootstrap,
 	SiReact,
-	SiMongodb,
-	SiMicrosoftsqlserver,
-	SiCsharp,
 	SiGithub,
 } from 'react-icons/si';
 import { FaNodeJs, FaGitAlt } from 'react-icons/fa';
@@ -36,16 +32,11 @@ function Myskills() {
 							</p>
 						</div>
 						<div className="skill-icons">
+							<SiReact />
 							<SiJavascript />
 							<SiHtml5 />
 							<SiCss3 />
-							<SiMaterialui />
 							<SiBootstrap />
-							<SiReact />
-							<FaNodeJs />
-							<SiMongodb />
-							<SiMicrosoftsqlserver />
-							<SiCsharp />
 							<SiGithub />
 							<FaGitAlt />
 						</div>

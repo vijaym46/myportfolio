@@ -2,121 +2,84 @@ import { Button } from '@mui/material';
 import './Projects.css';
 import { useContext } from 'react';
 import { colorContext } from './../../App';
-import Gastly from './../../assets/pokecards/Gastly.png';
-import Pikachu from './../../assets/pokecards/Pikachu.png';
-import realLogin from './../../assets/equipment/realLogin.png';
-import realhome from './../../assets/equipment/realhome.png';
-import realCart from './../../assets/equipment/real-productCart.png';
-import ptLogin from './../../assets/healthcare/ptLogin.png';
-import bookAppointment from './../../assets/healthcare/bookAppointment.png';
-import home from './../../assets/healthcare/home.png';
-import movieHome from './../../assets/favmovie/movieHome.png';
+import realLogin from './../../assets/netflix/realLogin.jpeg';
+import realhome from './../../assets/netflix/realhome.jpeg';
+import realCart from './../../assets/netflix/real-productCart.jpeg';
+import todolist from './../../assets/todo-List/todolist.jpeg';
+import search from './../../assets/todo-List/search.jpeg';
+import booksky from './../../assets/booksky/bookcollection.jpeg';
 import reacticon from './../../assets/techStack/react.png';
-import nodeicon from './../../assets/techStack/nodejs.svg';
 import netlifyicon from './../../assets/techStack/netlify-icon.svg';
-import mongodbicon from './../../assets/techStack/mongodb.svg';
-import materialuiicon from './../../assets/techStack/materialui.svg';
-import herokuicon from './../../assets/techStack/heroku-icon.svg';
-import expressjsicon from './../../assets/techStack/expressjs.png';
 import bootstrapicon from './../../assets/techStack/bootstrap.svg';
-import razorpayicon from './../../assets/techStack/razorpay.svg';
 import javascripticon from './../../assets/techStack/javascript.svg';
+import htmlicon from './../../assets/techStack/html.png';
+import cssicon from './../../assets/techStack/css.png';
 
 function Projects() {
 	const { bg, primary, secondary, tertiary } = useContext(colorContext);
 	const bgColor = bg;
 	const projectList = [
 		{
-			name: 'Equipment Rental',
+			name: 'Netflix clone',
 			about:
-				'To rent electrical equipments to vehicles. In this site one can rent things they need for specific ocassions.\n Customers are charged per hour for the product from the time they get to time they return.',
-			why: "Always had things that I used only once and getting dust in my space. So why isn't there any renting site for all the products. This is one that spraked me to create this site.",
-			whatnext: ['To make option available for people to rent out their unused items.'],
+				'Netflix is a global streaming service offering a vast library of movies, TV shows, and original content across various genres. It is known for revolutionizing how people consume media with its on-demand, ad-free experience.',
+			why: "I use Netflix for its convenience, vast content library, and personalized recommendations. It offers a diverse selection of movies, TV shows, documentaries, and original content that can be streamed anytime, anywhere, without commercials.",
+			whatnext: ['To make option available for people to login in.'],
 			imgSrc: [realLogin, realhome, realCart],
 			techStack: [
-				reacticon,
-				materialuiicon,
-				nodeicon,
-				expressjsicon,
-				mongodbicon,
-				razorpayicon,
-				herokuicon,
+				javascripticon,
+				htmlicon,
+				cssicon,
 				netlifyicon,
 			],
 			credentials: [{ email: 'admin@real.com', password: 'Admin@123' }],
-			github: 'https://github.com/Arun3sh/equipmentrental',
-			live: 'https://real-arun.netlify.app/',
+			github: 'https://github.com/vijaym46/Netflix-clone',
+			live: 'https://warm-basbousa-e9fa08.netlify.app/',
 			bg: tertiary,
 			text: secondary,
 			heading: primary,
 		},
 		{
-			name: 'Healthcare - Book Appointments',
+			name: 'Todo-List - For organizing tasks',
 			about:
-				'Healthcare is to have the treatment records in cloud and accessible at any time. It is also a place where you can book appointment with doctors at the time you need. ',
-			why: 'It was a way to reduce the waiting time in hospitals',
-			whatnext: ['To make reschdeule available.'],
-			imgSrc: [ptLogin, home, bookAppointment],
+				'A to-do list is a simple tool for organizing tasks and managing productivity. It helps prioritize and track daily activities, ensuring nothing is overlooked. ',
+			why: 'It was a away to stay organized, manage time effectively, and increase productivity.',
+			whatnext: ['To make remainder available.'],
+			imgSrc: [todolist, search],
 			techStack: [
 				reacticon,
-				materialuiicon,
 				bootstrapicon,
-				nodeicon,
-				expressjsicon,
-				mongodbicon,
-				herokuicon,
 				netlifyicon,
 			],
 			credentials: [
 				{ email: 'peter@doc.com', password: 'Doc@123' },
 				{ email: 'admin@real.com', password: 'Admin@123' },
 			],
-			github: 'https://github.com/Arun3sh/doctorappointment',
-			live: 'https://healthcare-arun.netlify.app/',
+			github: 'https://github.com/vijaym46/Todo-List-React',
+			live: 'https://todo-list-vijaym46.netlify.app/',
 			bg: primary,
 			text: secondary,
 			heading: tertiary,
 		},
 		{
-			name: 'My Favourite Movie - To have your own movie list',
+			name: 'BookSky - To manage your books',
 			about:
-				'Here one can save their favourite movies and share with friends. Able to ask friends to give movie suggestions. ',
-			why: 'To have a movie list to give suggestions to friends and they can have some insight here',
-			whatnext: ['To make reschdeule available.'],
-			imgSrc: [movieHome],
+				'BookVault is a secure online platform that allows users to store, organize, and manage book titles, author names, and descriptions. Perfect for bibliophiles and writers, BookVault keeps your literary collections and ideas easily accessible and well-organized in one central location. ',
+			why: 'It helps me to maintain organized and detailed records of my favourite book',
+			whatnext: ['To make feature to connect with like-minded readers.'],
+			imgSrc: [booksky],
 			techStack: [
-				reacticon,
-				materialuiicon,
-				nodeicon,
-				expressjsicon,
-				mongodbicon,
-				herokuicon,
+				javascripticon,
+				htmlicon,
+				cssicon,
 				netlifyicon,
 			],
 			credentials: [],
-			github: 'https://github.com/Arun3sh/my-fav-movie-react',
-			live: 'https://myfavmovie-fullstack.netlify.app/',
+			github: 'https://github.com/vijaym46/BookSky',
+			live: 'https://booksky-vijay.netlify.app/',
 			bg: tertiary,
 			text: secondary,
 			heading: primary,
-		},
-		{
-			name: 'Pokemon Card',
-			about:
-				'This web app is used to find pokemons attributes. Here one can search pokemon based on their type and also to get a specific pokemon.',
-			why: "I always wanted to know about the pokemon based on their type and their stats and that's why I created a site to search and find your fvourite pokemon's stat.",
-			whatnext: [
-				'Planning on adding their strength and weak against other pokemon',
-				'Best attacks to choose against opponent.',
-			],
-			imgSrc: [Gastly, Pikachu],
-			techStack: [javascripticon, bootstrapicon, netlifyicon],
-			credentials: [],
-			github: 'https://github.com/Arun3sh/Pokemon_Cards',
-			live: 'https://searchpokemoncard.netlify.app/',
-			bg: primary,
-			text: secondary,
-			heading: bg,
 		},
 	];
 	// Make sure that the bg of next div is the previous svg fill
