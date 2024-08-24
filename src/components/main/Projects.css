@@ -111,6 +111,9 @@
 	transform: scale(0.5, 0.5) rotate(2deg);
 	z-index: 4;
 }
+.Layer-0CryptoCurrency {
+	margin: 20px 0 0 15px;
+}
 
 @media screen and (min-width: 576px) {
 	.project {
@@ -133,23 +136,6 @@
 	}
 	.for-svg {
 		margin: -30px 0 0;
-	}
-	.Layer-0Pokemon,
-	.Layer-1Pokemon {
-		width: 300px !important;
-	}
-	.Layer-0Pokemon {
-		position: relative;
-		top: 120px;
-		left: 20px;
-		transform: scale(0.7, 0.7) rotate(348deg);
-	}
-	.Layer-1Pokemon {
-		position: absolute;
-		top: -50px;
-		bottom: 100px;
-		left: 115px;
-		transform: scale(0.7, 0.7) rotate(6deg);
 	}
 	.Layer-1Netflix {
 		width: 350px;
@@ -180,19 +166,6 @@
 	}
 }
 @media screen and (min-width: 992px) {
-	.Layer-0Pokemon {
-		width: 250px !important;
-		top: 175px;
-		left: 40px;
-		transform: rotate(348deg);
-	}
-	.Layer-1Pokemon {
-		width: 250px !important;
-		top: 0px;
-		bottom: 100px;
-		left: 210px;
-		transform: rotate(6deg);
-	}
 	.Layer-0Netflix {
 		transform: scale(1, 1);
 		left: 180px;

@@ -6,8 +6,8 @@ import realLogin from './../../assets/netflix/realLogin.jpeg';
 import realhome from './../../assets/netflix/realhome.jpeg';
 import realCart from './../../assets/netflix/real-productCart.jpeg';
 import todolist from './../../assets/todo-List/todolist.jpeg';
-import search from './../../assets/todo-List/search.jpeg';
-import booksky from './../../assets/booksky/bookcollection.jpeg';
+import search from './../../assets/todo-List/search.png';
+import cryptocurrency from './../../assets/cryptocurrency/cryptocurrency.png';
 import reacticon from './../../assets/techStack/react.png';
 import netlifyicon from './../../assets/techStack/netlify-icon.svg';
 import bootstrapicon from './../../assets/techStack/bootstrap.svg';
@@ -33,8 +33,8 @@ function Projects() {
 				netlifyicon,
 			],
 			credentials: [{ email: 'admin@real.com', password: 'Admin@123' }],
-			github: 'https://github.com/vijaym46/Netflix-clone',
-			live: 'https://warm-basbousa-e9fa08.netlify.app/',
+			github: 'https://github.com/vijaym46/clone-netflix-vj',
+			live: 'https://cloneofnetflx-vjm.netlify.app',
 			bg: tertiary,
 			text: secondary,
 			heading: primary,
@@ -52,22 +52,21 @@ function Projects() {
 				netlifyicon,
 			],
 			credentials: [
-				{ email: 'peter@doc.com', password: 'Doc@123' },
 				{ email: 'admin@real.com', password: 'Admin@123' },
 			],
 			github: 'https://github.com/vijaym46/Todo-List-React',
-			live: 'https://todo-list-vijaym46.netlify.app/',
+			live: 'https://todo-list-vj.netlify.app',
 			bg: primary,
 			text: secondary,
 			heading: tertiary,
 		},
 		{
-			name: 'BookSky - To manage your books',
+			name: 'CryptoCurrency - Real-Time Market Monitoring',
 			about:
-				'BookVault is a secure online platform that allows users to store, organize, and manage book titles, author names, and descriptions. Perfect for bibliophiles and writers, BookVault keeps your literary collections and ideas easily accessible and well-organized in one central location. ',
-			why: 'It helps me to maintain organized and detailed records of my favourite book',
-			whatnext: ['To make feature to connect with like-minded readers.'],
-			imgSrc: [booksky],
+				'The cryptocurrency price display project in JavaScript involves fetching real-time data from APIs to display current prices of various cryptocurrencies. It features dynamic updates and interactive UI elements for tracking market trends. ',
+			why: 'It provides a quick and accessible way to track the fluctuating prices of various cryptocurrencies, helping investors and enthusiasts make informed decisions.',
+			whatnext: ['To make feature to connect with like-minded investors.'],
+			imgSrc: [cryptocurrency],
 			techStack: [
 				javascripticon,
 				htmlicon,
@@ -75,8 +74,8 @@ function Projects() {
 				netlifyicon,
 			],
 			credentials: [],
-			github: 'https://github.com/vijaym46/BookSky',
-			live: 'https://booksky-vijay.netlify.app/',
+			github: 'https://github.com/vijaym46/CryptoCurrencyPrice',
+			live: 'https://cryto-currency-price.netlify.app',
 			bg: tertiary,
 			text: secondary,
 			heading: primary,
