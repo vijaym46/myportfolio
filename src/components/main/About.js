@@ -3,7 +3,7 @@ import './About.css';
 import { useContext } from 'react';
 import { colorContext } from './../../App';
 import mine from './../../assets/mine.jpg';
-import resume from './../../assets/Vijay.pdf';
+import resume from './../../assets/Vijay_M.pdf';
 
 function About() {
 	const { secondary } = useContext(colorContext);
