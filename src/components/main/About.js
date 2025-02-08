@@ -15,13 +15,13 @@ function About() {
 				<div className="about-me" style={textColor}>
 					<div className="about-content">
 						<h3 className="myname">I'm Vijay</h3>
-						<h4>A Frontend Developer</h4>
+						<h4>React Developer</h4>
 						<p>
-							&emsp; &emsp; Software Developer dedicated to improving skills through hands-on
-							learning and development work. <br />
-							&emsp; &emsp; Proficient in mobile and desktop development environments. Adept at
-							using HTML5, JavaScript and other programming languages to produce clean code.
-							Well-organized and collaborative with strong communication and analytical abilities.{' '}
+							&emsp; &emsp; React Developer with internship experience in building responsive and
+							user-friendly web applications. <br />
+							&emsp; &emsp; Proficient in JavaScript, React.js, Redux, and
+							modern web technologies with a strong understanding. Skilled in state
+							management and API integration.{' '}
 							<br />
 						</p>
 					</div>

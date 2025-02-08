@@ -5,6 +5,7 @@ import {
 	SiBootstrap,
 	SiReact,
 	SiGithub,
+	SiTailwindcss,
 } from 'react-icons/si';
 import { FaNodeJs, FaGitAlt } from 'react-icons/fa';
 import githubrepo from './../../assets/techStack/github-repo.svg';
@@ -34,9 +35,10 @@ function Myskills() {
 						<div className="skill-icons">
 							<SiReact />
 							<SiJavascript />
-							<SiHtml5 />
-							<SiCss3 />
+							<SiTailwindcss/>
 							<SiBootstrap />
+							<SiCss3 />
+							<SiHtml5 />
 							<SiGithub />
 							<FaGitAlt />
 						</div>

@@ -2,9 +2,9 @@ import { Button } from '@mui/material';
 import './Projects.css';
 import { useContext } from 'react';
 import { colorContext } from './../../App';
-import realLogin from './../../assets/netflix/realLogin.jpeg';
-import realhome from './../../assets/netflix/realhome.jpeg';
-import realCart from './../../assets/netflix/real-productCart.jpeg';
+import stalbansHome from './../../assets/stalbans/stalbansHome.png';
+import stalbansBooklet from './../../assets/stalbans/stalbansBooklet.png';
+import stalbansAbout from './../../assets/stalbans/stalbansAbout.png';
 import todolist from './../../assets/todo-List/todolist.jpeg';
 import search from './../../assets/todo-List/search.png';
 import cryptocurrency from './../../assets/cryptocurrency/cryptocurrency.png';
@@ -14,27 +14,28 @@ import bootstrapicon from './../../assets/techStack/bootstrap.svg';
 import javascripticon from './../../assets/techStack/javascript.svg';
 import htmlicon from './../../assets/techStack/html.png';
 import cssicon from './../../assets/techStack/css.png';
+import react from './../../assets/techStack/react.png';
+import tailwind from './../../assets/techStack/tailwind.png';
 
 function Projects() {
 	const { bg, primary, secondary, tertiary } = useContext(colorContext);
 	const bgColor = bg;
 	const projectList = [
 		{
-			name: 'Netflix clone',
+			name: 'Stalbansprinting (Intern project)',
 			about:
-				'Netflix is a global streaming service offering a vast library of movies, TV shows, and original content across various genres. It is known for revolutionizing how people consume media with its on-demand, ad-free experience.',
-			why: "I use Netflix for its convenience, vast content library, and personalized recommendations. It offers a diverse selection of movies, TV shows, documentaries, and original content that can be streamed anytime, anywhere, without commercials.",
-			whatnext: ['To make option available for people to login in.'],
-			imgSrc: [realLogin, realhome, realCart],
+				'Designed and developed a fully responsive printing services website showcasing products like bookmarks, booklets, memorial printing, etc.',
+			why: "Integrated user-friendly navigation and detailed service pages to enhance customer experience and engagement. Added an admin panel to manage products, update prices, and make other modifications efficiently.",
+			whatnext: ['To ensure a seamless experience in PDF editing.'],
+			imgSrc: [stalbansHome, stalbansBooklet, stalbansAbout],
 			techStack: [
-				javascripticon,
+				react,
+				tailwind,
 				htmlicon,
 				cssicon,
-				netlifyicon,
 			],
-			credentials: [{ email: 'admin@real.com', password: 'Admin@123' }],
-			github: 'https://github.com/vijaym46/clone-netflix-vj',
-			live: 'https://cloneofnetflx-vjm.netlify.app',
+			github: '',
+			live: 'https://www.stalbansprinting.com/',
 			bg: tertiary,
 			text: secondary,
 			heading: primary,
@@ -50,9 +51,6 @@ function Projects() {
 				reacticon,
 				bootstrapicon,
 				netlifyicon,
-			],
-			credentials: [
-				{ email: 'admin@real.com', password: 'Admin@123' },
 			],
 			github: 'https://github.com/vijaym46/Todo-List-React',
 			live: 'https://todo-list-vj.netlify.app',
@@ -73,7 +71,6 @@ function Projects() {
 				cssicon,
 				netlifyicon,
 			],
-			credentials: [],
 			github: 'https://github.com/vijaym46/CryptoCurrencyPrice',
 			live: 'https://cryto-currency-price.netlify.app',
 			bg: tertiary,
@@ -94,7 +91,6 @@ function Projects() {
 						whatnext,
 						imgSrc,
 						techStack,
-						credentials,
 						github,
 						live,
 						bg,
@@ -138,16 +134,6 @@ function Projects() {
 									))}
 								</div>
 
-								{/* For displaying credentials for the site */}
-								<div className="project-credentials">
-									{credentials.length > 0 ? <h4>Credentails for the live site</h4> : ''}
-									{credentials.map(({ email, password }, index) => (
-										<p>
-											{password === 'Admin@123' ? 'Admin' : 'Doctor'} : {email} - {password}
-										</p>
-									))}
-								</div>
-
 								{/* Button for source code and live link */}
 								<div className="project-link-btn">
 									<Button variant="outlined" size="large" style={{ borderColor: bgColor }}>
@@ -155,11 +141,13 @@ function Projects() {
 											Live
 										</a>
 									</Button>
+									{(index !== 0 && index !== 1)  && (
 									<Button variant="text" size="large" style={{ borderColor: bgColor }}>
 										<a target="_blank" rel="noreferrer" href={github} style={{ color: bgColor }}>
 											Github repo
 										</a>
 									</Button>
+									)}
 								</div>
 							</div>
 
